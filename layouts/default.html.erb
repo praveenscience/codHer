@@ -8,8 +8,7 @@
           </a>
           <h1>Dropwizard workshop for women techies</h1>
 
-          <h6>Introductory session for women in java programming world to get some hands on experience on the leading
-            web framework</h6>
+          <h6>Code & Collaborate</h6>
 
           <% if @item[:subheader] %>
               <h5 class="subheader"><%= @item[:subheader] %></h5>
@@ -19,7 +18,7 @@
 
       <div class="row countdown">
         <div class="small-8 small-offset-2 large-4 large-offset-0 columns date">
-          <p>Lets collaborate on</p>
+          <p>On</p>
           <h4><%= start_date.strftime("%b %-d").downcase %></h4>
         </div>
         <div class="small-6 large-2 columns counter">
@@ -45,8 +44,8 @@
         </div>
       </div>
 
-      <div class="row actions" style="margin-left: 500px">
-        <div class="large-5 columns participate">
+      <div class="row actions">
+        <div class="large-5 columns participate" style="margin-left: 30%;">
           <% if item[:participate] %>
               <a href="<%= @item[:participate] %>" target="_blank" rel="nofollow"
                  onclick="ga('send', 'event', 'participate', 'participate')">
